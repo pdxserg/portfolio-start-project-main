@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../../assets/images/photo.jpeg'
+import photo from '../../../assets/images/photo1.jpeg'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
@@ -9,7 +9,7 @@ export const Main = () => {
 			<FlexWrapper align={"center"} justify={"space-around"}>
 				<div>
 					<span>Hi There</span>
-					<Name>I am Svetlana Dyablo</Name>
+					<Name>I am Olga Starchenko</Name>
 					<MainTitle>A Web Developer. </MainTitle>
 				</div>
 				<Photo src={photo} alt=""/>
@@ -30,6 +30,6 @@ const StyledMain = styled.div`
 `
 const Photo = styled.img`
     Width: 350px;
-    Height: 430px;
+    Height: 450px;
     object-fit: cover;
 `
