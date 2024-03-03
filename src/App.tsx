@@ -1,6 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import {Headr} from "./layout/headr/Headr";
+import {Main} from "./layout/sections/main/Main";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <div className="App">
 
             <Headr />
+            <Main />
         </div>
     );
 }
