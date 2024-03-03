@@ -5,22 +5,24 @@ import styled from "styled-components";
 
 type SkillPropsType = {
 	iconId: string
-	name: string
+	title: string
+	description: string
 }
 export const Skill = (props: SkillPropsType) => {
 	return (
 		<StyledSkill>
 			<Icon iconId={props.iconId}/>
-			<SkillTitle>{props.name}</SkillTitle>
-			<SkillText>
-				Lorem ipsum dolor sit amet,
-				consectetur adipisicing elit. Quisquam, vero!
-			</SkillText>
+			<SkillTitle>{props.title}</SkillTitle>
+			<SkillText>{props.description}</SkillText>
 		</StyledSkill>
 	);
 };
 
 const StyledSkill = styled.div`
+    width: 30%;
+    background-color: rgba(224, 216, 216, 0.5);
+	margin: 10px;
+	
 `
 
 const SkillText = styled.p`
