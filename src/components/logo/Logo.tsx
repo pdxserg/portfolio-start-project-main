@@ -5,6 +5,7 @@ export const Logo = () => {
 	return (
 		<a href=" ">
 			<Icon iconId={'react'} />
+
 		</a>
 	);
 };
