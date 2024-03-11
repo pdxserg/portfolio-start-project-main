@@ -40,7 +40,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-    background-color: #cbc3c3;
+  
     min-height: 20vh;
 
 `

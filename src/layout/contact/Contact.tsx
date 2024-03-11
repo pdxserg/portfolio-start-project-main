@@ -23,7 +23,7 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-    background-color: #c8f8b4;
+    
 	min-height: 50vh;
 `
 const StyledForm = styled.form`

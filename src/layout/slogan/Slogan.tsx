@@ -13,7 +13,6 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-    background-color: #e19c9c;
 	height: 50vh;
     display: flex;
 	flex-direction: column;

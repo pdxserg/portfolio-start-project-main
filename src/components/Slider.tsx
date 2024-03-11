@@ -26,7 +26,6 @@ export const Slider = () => {
 };
 
 const StyledSlider = styled.div`
-background-color: #fff;
     max-width: 500px;
     display: flex;
 	flex-direction: column;
