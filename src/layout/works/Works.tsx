@@ -5,7 +5,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Work} from "./work/Work";
 import photo from "../../assets/images/proj1.png"
 import photo1 from "../../assets/images/proj2 .png"
-import {Menu} from "../../components/menu/Menu";
+import {TabMenu} from "./tabMenu/TabMenu";
 import {Container} from "../../components/Container";
 
 const items1 = ["All", "Landingpage", "React", "SPA"]
@@ -14,7 +14,7 @@ export const Works = () => {
 		<StyledWorks>
 			<Container>
 				<SectionTitle>My Work </SectionTitle>
-				<Menu menuItems={items1} />
+				<TabMenu menuItems={items1} />
 				<FlexWrapper justify={'space-between'}>
 					<Work
 						src={photo}

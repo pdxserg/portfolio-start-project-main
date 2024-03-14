@@ -29,9 +29,11 @@ export const GlobalStyled = createGlobalStyle`
     p {
         font-size: 14px;
         font-weight: 400;
+        line-height: 1.4;
     }
 a {
 	text-decoration: none;
+	color: ${theme.colors.font};
 }
    ul{
 	   list-style: none;

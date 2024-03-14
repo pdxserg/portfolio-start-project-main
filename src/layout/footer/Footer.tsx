@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../components/SectionTitle";
 import {Icon} from "../../components/icon/Icon";
-import {Menu} from "../../components/menu/Menu";
+import {TabMenu} from "../works/tabMenu/TabMenu";
 import {FlexWrapper} from "../../components/FlexWrapper";
 
 
