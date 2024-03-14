@@ -9,6 +9,7 @@ direction?: string
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     display: flex;
+	height: 100%;
     justify-content: ${props => props.justify || "flex-start"};
     align-items: ${props => props.align || "stretch"};
     flex-direction: ${props => props.direction || "row"};
