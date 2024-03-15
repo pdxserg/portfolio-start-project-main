@@ -30,7 +30,7 @@ const StyledSlider = styled.div`
     display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+    border: 1px solid red ;
 `
 const Slide = styled.div`
 	
@@ -39,14 +39,28 @@ const Slide = styled.div`
 const StyledText = styled.p`
 
 `
-const Name =styled.span``
+const Name =styled.span`
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+	display: inline-block;
+	margin: 20px 0 50px;
+
+`
 
 const Pagination = styled.div`
     span {
 	    display: inline-block;
-	    width: 10px;
-	    height: 10px;
-        margin: 5px;
-        background-color: #26fc2a;
+	    width: 7px;
+	    height: 7px;
+     
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+	    & + span {
+    margin-left: 5px;
+    }
+    }
 	   
 `
