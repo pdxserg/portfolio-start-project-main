@@ -4,57 +4,87 @@ import {SectionTitle} from "../../components/SectionTitle";
 import {Icon} from "../../components/icon/Icon";
 import {TabMenu} from "../works/tabMenu/TabMenu";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {Container} from "../../components/Container";
+import {theme} from "../../styles/Theme.styled";
 
 
 export const Footer = () => {
 	return (
 		<StyledFooter>
-			<FlexWrapper direction={"column"} align={"center"}>
-				<SectionTitle>Olga</SectionTitle>
-				<SocialList>
-					<SocialItem>
-						<SocialIconLink>
-							<Icon iconId="insta"/>
-						</SocialIconLink>
-					</SocialItem>
-					<SocialItem>
-						<SocialIconLink>
-							<Icon iconId="telegram"/>
-						</SocialIconLink>
-					</SocialItem>
-					<SocialItem>
-						<SocialIconLink>
-							<Icon iconId="vk"/>
-						</SocialIconLink>
-					</SocialItem>
-					<SocialItem>
-						<SocialIconLink>
-							<Icon iconId="linkedin"/>
-						</SocialIconLink>
-					</SocialItem>
-				</SocialList>
-				<Copyright>© 2023 Olga , All Rights Reserved.</Copyright>
-			</FlexWrapper>
+
+				<FlexWrapper direction={"column"} align={"center"}>
+					<Name>Olga</Name>
+					<SocialList>
+						<SocialItem>
+							<SocialIconLink>
+								<Icon iconId="insta"/>
+							</SocialIconLink>
+						</SocialItem>
+						<SocialItem>
+							<SocialIconLink>
+								<Icon iconId="telegram"/>
+							</SocialIconLink>
+						</SocialItem>
+						<SocialItem>
+							<SocialIconLink>
+								<Icon iconId="vk"/>
+							</SocialIconLink>
+						</SocialItem>
+						<SocialItem>
+							<SocialIconLink>
+								<Icon iconId="linkedin"/>
+							</SocialIconLink>
+						</SocialItem>
+					</SocialList>
+					<Copyright>© 2023 Olga , All Rights Reserved.</Copyright>
+				</FlexWrapper>
+
+
 		</StyledFooter>
 	);
 };
 
 const StyledFooter = styled.footer`
-  
-    min-height: 20vh;
+  background-color: ${theme.colors.primeryBg};
+	padding: 40px 0 ;
 
+`
+const Name = styled.span`
+    font-family: Josefin Sans, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
 `
 const SocialList = styled.ul`
     display: flex;
+	gap: 20px;
+	margin: 30px 0;
 `
 
 const SocialItem = styled.li`
-    list-style-type: none;
+   
 `
 const SocialIconLink = styled.a`
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: ${theme.colors.accent};
+	
+	&:hover {
+		cursor: pointer;
+		color: ${theme.colors.primeryBg};
+		transform: translateY(-4px);
+	}
+	
 
 
 `
 
 const Copyright = styled.small`
+    color: rgba(255, 255, 255, 0.5);
 `
