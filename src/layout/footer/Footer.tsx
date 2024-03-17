@@ -66,7 +66,7 @@ const SocialItem = styled.li`
 `
 const SocialIconLink = styled.a`
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    border-radius: 25px;
     width: 35px;
     height: 35px;
 	
