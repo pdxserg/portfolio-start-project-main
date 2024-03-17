@@ -16,7 +16,11 @@ export const Main = () => {
 						<MainTitle>A Web Developer. </MainTitle>
 					</div>
 					<PhotoWrap>
-						<Photo src={photo} alt=""/>
+						<picture>
+							<source srcSet={`${photo} 1x`}/>
+							<Photo src={photo} alt="Photo"/>
+						</picture>
+
 					</PhotoWrap>
 
 				</FlexWrapper>
