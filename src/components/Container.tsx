@@ -7,6 +7,5 @@ max-width: 1170px;
 	padding: 0 15px;
 	outline: 2px solid red;
 margin: 0 auto;
-
-@media 
+	
 `

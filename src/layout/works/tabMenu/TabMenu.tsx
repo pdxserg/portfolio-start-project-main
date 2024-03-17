@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-
 import {LinkItem} from "../../../components/LinkItem";
 
 export const TabMenu = (props: { menuItems: Array<string> }) => {
