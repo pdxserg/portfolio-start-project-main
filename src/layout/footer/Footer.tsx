@@ -14,23 +14,24 @@ export const Footer = () => {
 					<SocialList>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="insta"/>
+								<Icon iconId="insta" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="telegram"/>
+								<Icon iconId="telegram" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
+
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="vk"/>
+								<Icon iconId="vk" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="linkedin"/>
-							</SocialIconLink>
+								<Icon iconId={"linkedin"} width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
+							</SocialIconLink>d
 						</SocialItem>
 					</SocialList>
 					<Copyright>© 2023 Olga , All Rights Reserved.</Copyright>
@@ -76,6 +77,7 @@ const SocialIconLink = styled.a`
 		cursor: pointer;
 		color: ${theme.colors.primeryBg};
 		transform: translateY(-4px);
+       background-color: ${theme.colors.accent};
 	}
 	
 
