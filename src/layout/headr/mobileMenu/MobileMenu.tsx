@@ -1,14 +1,14 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme.styled";
 
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
 	return (
 		<StyledMobileMenu>
-			<BurgerButton>
+			<BurgerButton isOpen={true}>
 				<span></span>
 			</BurgerButton>
-			<MobileMenuWrap>
+			<MobileMenuPopup isOpen={true}>
 				<ul>
 					{props.menuItems.map((item, index) => {
 							return <ListItem key={index}>
@@ -24,52 +24,21 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 						}
 					)}
 				</ul>
-			</MobileMenuWrap>
+			</MobileMenuPopup>
 
 		</StyledMobileMenu>
 	);
 };
 const StyledMobileMenu = styled.nav`
+    display: none;
+
+	@media ${theme.media.tablet} {
+        display: block;
+		
+    }
 
 `
-const BurgerButton = styled.button`
-    position: fixed;
-    top: -100px;
-    right: -100px;
-	width: 200px;
-	height: 200px;
-	
-	span {
-		display: block;
-		width: 36px;
-		height: 2px;
-		color: ${theme.colors.font};
-		position: absolute;
-		left: 40px;
-		bottom: 50px;
-		
-		&::before{
-			content:"";
-			transform: translateY(-10px);
-            display: block;
-            width: 36px;
-            height: 2px;
-            color: ${theme.colors.font};
-            position: absolute;
-			
-		}
-		&::after{
-            content:"";
-            transform: translateY(10px);
-            display: block;
-            width: 36px;
-            height: 2px;
-            color: ${theme.colors.font};
-            position: absolute;
-		}
-	}
-`
-const MobileMenuWrap = styled.div`
+const MobileMenuPopup = styled.div<{isOpen: boolean}>`
 	position: fixed;
 	background-color: rgba(31, 31, 32, 0.9);
 	top: 0;
@@ -77,6 +46,14 @@ const MobileMenuWrap = styled.div`
 	left: 0;
 	right: 0;
 	z-index: 99999;
+	display: none;
+	
+	${props => props.isOpen && css<{isOpen: boolean}>`
+	     display: flex;
+		justify-content: center;
+		align-items: center;
+	`}
+	
     ul {
         display: flex;
         gap: 30px;
@@ -84,11 +61,56 @@ const MobileMenuWrap = styled.div`
 	    align-items: center;
         justify-content: center;
     }
-
-    @media ${theme.media.tablet} {
-        display: none;
-    }
+	
 `
+const BurgerButton = styled.button<{isOpen: boolean}>`
+    position: fixed;
+    top: -100px;
+    right: -100px;
+	width: 200px;
+	height: 200px;
+	z-index: 999999;
+	
+	span {
+		display: block;
+		width: 36px;
+		height: 2px;
+		background-color: ${theme.colors.font};
+		position: absolute;
+		left: 40px;
+		bottom: 50px;
+		
+		${props => props.isOpen  && css<{isOpen: boolean}>`
+            background-color: rgba(255, 250, 250, 0);
+        `}
+		
+		&::before{
+			content:"";
+			transform: translateY(-10px);
+             display: block;
+             width: 36px;
+             height: 2px;
+             background-color: ${theme.colors.font};
+            position: absolute;
+            ${props => props.isOpen  && css<{isOpen: boolean}>`
+                transform: rotate(-45deg) translateY(0);
+        `}
+		}
+		&::after{
+            content:"";
+            transform: translateY(10px);
+             display: block;
+             width: 36px;
+             height: 2px;
+             background-color: ${theme.colors.font};
+            position: absolute;
+            ${props => props.isOpen  && css<{isOpen: boolean}>`
+                transform: rotate(45deg) translateY(0);
+        `}
+		}
+	}
+`
+
 const Link = styled.a`
     font-family: Josefin Sans, sans-serif;
     font-size: 30px;
