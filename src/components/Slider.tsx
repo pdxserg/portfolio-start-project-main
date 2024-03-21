@@ -8,10 +8,7 @@ export const Slider = () => {
 		<StyledSlider>
 			<FlexWrapper>
 				<Slide>
-					<StyledText>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Aliquid autem beatae delectus dolore dolores doloribus id iure magnam
-						magni non nulla optio perferendis praesentium quia reprehenderit tenetur
-						unde veritatis, voluptatum.
+					<StyledText>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					</StyledText>
 					<Name>@ivan ivanow</Name>
 				</Slide>
@@ -47,7 +44,7 @@ const Name =styled.span`
     letter-spacing: 1px;
     text-transform: uppercase;
 	display: inline-block;
-	margin: 20px 0 40px;
+	margin: 20px 0 30px;
 
 `
 

@@ -20,7 +20,7 @@ export const GlobalStyled = createGlobalStyle`
 	    color: ${theme.colors.font};
 	    line-height: 1.2;
 	    
-	    min-width: 360px;
+	  min-width: 360px;
     }
     h3 {
         font-family: Josefin Sans, sans-serif;

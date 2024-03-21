@@ -29,7 +29,7 @@ const StyledTestimony = styled.section`
     min-height: 50vh;
 	
 	${IconWrap}{
-		margin: 40px 0 60px;
+		margin: 28px 0 72px;
 	}
 `
 

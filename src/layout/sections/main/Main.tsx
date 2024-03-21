@@ -78,8 +78,9 @@ const MainTitle = styled.h1`
 const PhotoWrap = styled.div`
 position: relative;
 	z-index: 0;
-    margin-top: 65px ;
+    
 	margin-right: 15px;
+	
 	&::before {
 		position: absolute;
 		content: "";
@@ -95,6 +96,9 @@ position: relative;
            
         }
 	}
+    @media ${theme.media.mobile} {
+        margin-top: 65px ;
+    }
 `
 
 const Photo = styled.img`

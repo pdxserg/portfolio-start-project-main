@@ -38,6 +38,7 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
+	min-height: 84vh;
     ${FlexWrapper}{
 	    gap: 10PX;
     }

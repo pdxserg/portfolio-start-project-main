@@ -14,50 +14,32 @@ export const Skills = () => {
 					<Skill
 						iconId={'codeSvg'}
 						title={'html'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 					<Skill
 						iconId={'css'}
 						title={'css'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 					<Skill
 						iconId={'react'}
 						title={'react'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 					<Skill
 						iconId={'tipescript'}
 						title={'tipescript'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 					<Skill
 						iconId={'styledCompan'}
 						title={'styledCompan'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 					<Skill
 						iconId={'figma'}
 						title={'figma'}
-						description={'lorem10orem ipsum dolor sit amet,' +
-							' consectetur adipisicing elit, sed do eiusmod ' +
-							'tempor incididunt ut labore et dolore magna aliqua' +
-							' Ut enim '}
+						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
 					/>
 
 				</FlexWrapper>
