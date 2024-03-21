@@ -14,24 +14,24 @@ export const Footer = () => {
 					<SocialList>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="insta" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
+								<Icon iconId="insta" width={"21px"} height={"21px"} viewBox={"0 0 21 21"}/>
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="telegram" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
+								<Icon iconId="telegram" width={"21px"} height={"21px"} viewBox={"0 0 21 21"}/>
 
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId="vk" width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
+								<Icon iconId="vk" width={"21px"} height={"21px"} viewBox={"0 0 21 21"}/>
 							</SocialIconLink>
 						</SocialItem>
 						<SocialItem>
 							<SocialIconLink>
-								<Icon iconId={"linkedin"} width={"21px"} height={"21px"} viewBox={"0 0 21px 21px"}/>
-							</SocialIconLink>d
+								<Icon iconId={"linkedin"} width={"21px"} height={"21px"} viewBox={"0 0 21 21"}/>
+							</SocialIconLink>
 						</SocialItem>
 					</SocialList>
 					<Copyright>© 2023 Olga , All Rights Reserved.</Copyright>

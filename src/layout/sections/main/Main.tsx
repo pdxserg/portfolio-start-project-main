@@ -4,12 +4,13 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme.styled";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexWrapper align={"center"} justify={"space-between"}>
+				<FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
 					<div>
 						<SmallText>Hi There</SmallText>
 						<Name>I am <span>Olga Starchenko</span></Name>
@@ -41,7 +42,8 @@ const SmallText = styled.h2`
     font-weight: 400;
 `
 const Name = styled.h2`
-    font-family: Josefin Sans , sans-serif;
+	${font({family: "'Josefin Sans' , sans-serif", weight: 700})}
+    font-family: 'Josefin Sans' , sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -74,16 +76,26 @@ position: relative;
 		position: absolute;
 		content: "";
 		width: 360px;
-		height: 500px;
+		height: 485px;
 		border: 5px solid ${theme.colors.accent};
 		top: -25px;
-		right: -32px;
+		right: -25px;
 		z-index: -1;
+        @media ${theme.media.mobile} {
+            height: 415px;
+            width: 310px;
+        }
 	}
 `
 
 const Photo = styled.img`
-    Width: 350px;
-    Height: 450px;
+    width: 350px;
+    height: 450px;
     object-fit: cover;
+	@media ${theme.media.mobile} {
+		height: 380px;
+		width: 310px;
+		
+		
+	}
 `
