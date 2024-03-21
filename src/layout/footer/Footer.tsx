@@ -48,10 +48,13 @@ const StyledFooter = styled.footer`
 
 `
 const Name = styled.span`
-    font-family: Josefin Sans, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 3px;
+	@media ${theme.media.mobile} {
+        font-size: 16px;
+    }
 `
 const SocialList = styled.ul`
     display: flex;
