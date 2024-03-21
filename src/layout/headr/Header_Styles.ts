@@ -10,8 +10,6 @@ const Header = styled.header`
 	right: 0;
 	z-index: 99999;
 `
-
 export const S = {
-	Header,
-
+	Header
 }

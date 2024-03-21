@@ -1,47 +1,26 @@
 import React from 'react';
-import styled from "styled-components";
 import {theme} from "../../../styles/Theme.styled";
+import styled from "styled-components";
 
-export const HeaderMenu = (props: { menuItems: Array<string> }) => {
+export const Menu:React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
 	return (
-		<StyledHeaderMenu>
-			<ul>
-				{props.menuItems.map((item, index)=> {
-						return	<ListItem key={index}>
-							<Link href="#">{item}
+		<ul>
+			{props.menuItems.map((item, index) => {
+					return <ListItem key={index}>
+						<Link href="#">{item}
 							<Mask>
 								<span>{item}</span>
 							</Mask>
 							<Mask>
 								<span>{item}</span>
 							</Mask>
-							</Link>
-						</ListItem>
-					}
-				)}
-			</ul>
-		</StyledHeaderMenu>
+						</Link>
+					</ListItem>
+				}
+			)}
+		</ul>
 	);
 };
-const StyledHeaderMenu = styled.nav`
-     ul {
-	     display: flex;
-	     gap: 30px;
-	     justify-content: center;
-     }
-	@media ${theme.media.tablet} {
-		display: none;
-	}
-	
-`
-
-const Link = styled.a`
-    font-family: Josefin Sans, sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-	color: transparent;
-`
 const Mask = styled.span`
 position: absolute;
 	top: 0;
@@ -91,4 +70,12 @@ const ListItem = styled.li`
 	}
 	
 }
+`
+const Link = styled.a`
+    font-family: Josefin Sans, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+	color: transparent;
+
 `
