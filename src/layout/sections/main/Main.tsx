@@ -10,7 +10,7 @@ export const Main = () => {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
+				<FlexWrapper align={"center"} justify={"space-around"} wrap={"wrap"}>
 					<div>
 						<SmallText>Hi There</SmallText>
 						<Name>I am <span>Olga Starchenko</span></Name>
@@ -38,20 +38,22 @@ const StyledMain = styled.section`
 `
 
 const SmallText = styled.h2`
-    font-size: 14px;
-    font-weight: 400;
+    //font-size: 14px;
+    //font-weight: 400;
+    ${font({weight: 400, Fmin: 20, Fmax: 14,})}
 `
 const Name = styled.h2`
-	${font({family: "'Josefin Sans' , sans-serif", weight: 700})}
-    font-family: 'Josefin Sans' , sans-serif;
-    font-size: 50px;
-    font-weight: 700;
+	 ${font({family: "'Josefin Sans' , sans-serif", weight: 700, Fmin: 36, Fmax: 50,})}
+    //font-family: 'Josefin Sans' , sans-serif;
+    //font-size: 50px;
+    //font-weight: 700;
     letter-spacing: 0.05em;
-	margin: 15px 0;
+	margin: 10px 0;
 	
 	span{
 		position: relative;
 		z-index: 0;
+		white-space: nowrap;
 	&::before{
 		content: "";
 		display: inline-block;
@@ -63,15 +65,21 @@ const Name = styled.h2`
 		z-index: -1;
 	}	
 	}
+    @media ${theme.media.mobile} {
+        margin: 15px 0 22px; 
+    }
 `
 
 const MainTitle = styled.h1`
     font-size: 27px;
     font-weight: 400;
+    
 `
 const PhotoWrap = styled.div`
 position: relative;
 	z-index: 0;
+    margin-top: 65px ;
+	margin-right: 15px;
 	&::before {
 		position: absolute;
 		content: "";
@@ -84,6 +92,7 @@ position: relative;
         @media ${theme.media.mobile} {
             height: 415px;
             width: 310px;
+           
         }
 	}
 `
@@ -95,7 +104,7 @@ const Photo = styled.img`
 	@media ${theme.media.mobile} {
 		height: 380px;
 		width: 310px;
-		
+        
 		
 	}
 `
