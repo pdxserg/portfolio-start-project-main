@@ -47,7 +47,7 @@ const Name =styled.span`
     letter-spacing: 1px;
     text-transform: uppercase;
 	display: inline-block;
-	margin: 20px 0 50px;
+	margin: 20px 0 40px;
 
 `
 

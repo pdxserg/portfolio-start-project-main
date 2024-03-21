@@ -5,17 +5,21 @@ import {Icon} from "../../components/icon/Icon";
 import {Slider} from "../../components/Slider";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {IconWrap} from "../sections/skills/skill/Skill";
+import {Container} from "../../components/Container";
 
 export const Testimony = () => {
 	return (
 		<StyledTestimony>
-			<SectionTitle>Testimony</SectionTitle>
-			<FlexWrapper direction={"column"} align={"center"}>
-				<IconWrap>
-					<Icon iconId={'quote'}/>
-				</IconWrap>
-				<Slider/>
-			</FlexWrapper>
+			<Container>
+				<SectionTitle>Testimony</SectionTitle>
+				<FlexWrapper direction={"column"} align={"center"}>
+					<IconWrap>
+						<Icon iconId={'quote'}/>
+					</IconWrap>
+					<Slider/>
+				</FlexWrapper>
+			</Container>
+
 		</StyledTestimony>
 	);
 };

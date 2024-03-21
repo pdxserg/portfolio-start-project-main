@@ -16,7 +16,7 @@ export const SectionTitle = styled.h2`
 		display: inline-block;
 		width: 70px;
 		height: 1px;
-        background-color: ${theme.colors.accent};
+        background-color: ${theme.colors.accent}; 
         position: absolute;
 		left: 50%;
 		bottom: -30px;
