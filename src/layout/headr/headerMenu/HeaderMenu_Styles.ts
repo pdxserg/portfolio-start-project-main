@@ -1,28 +1,68 @@
-import React from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme.styled";
-import {Menu} from "../menu/Menu";
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
-	return (
-		<StyledMobileMenu>
-			<BurgerButton isOpen={false}>
-				<span></span>
-			</BurgerButton>
-			<MobileMenuPopup isOpen={false}>
-				<Menu menuItems={props.menuItems}/>
-			</MobileMenuPopup>
-
-		</StyledMobileMenu>
-	);
-};
-const StyledMobileMenu = styled.nav`
-    display: none;
-
-	@media ${theme.media.tablet} {
-        display: block;
+const Mask = styled.span`
+position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 50%;
+	overflow-y: hidden;
+	
+	color: ${theme.colors.accent};
+	
+	& + & {
+		top: 50%;
+		span {
+			display: inline-block;
+			transform: translateY(-50%);
+		}
+	}
+	
+`
+const MenuItem = styled.li`
+	position: relative;
+	
+	&::before{
+		content: "";
+		display: inline-block;
+		height: 3px;
+		background-color: ${theme.colors.accent};
 		
-    }
+		position: absolute;
+		top: 50%;
+		left: -10px;
+		right: -10px;
+		z-index: 1;
+		
+		transform: scale(0);
+	} 
+&:hover {
+	&::before{
+        transform: scale(1);
+	}
+	${Mask} {
+		color: ${theme.colors.font};
+		 transform: skewX(12deg) translateX(2px);
+      & + ${Mask} {
+            transform: skewX(12deg) translateX(-2px);
+        }
+	}
+	
+}
+`
+const Link = styled.a`
+    font-family: Josefin Sans, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+	color: transparent;
+
+`
+
+//Mobile menu
+
+const MobileMenu = styled.nav`
 
 `
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
@@ -97,5 +137,22 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
 		}
 	}
 `
+//Desktop
+const StyledDesktopMenu = styled.nav`
+     ul {
+	     display: flex;
+	     gap: 30px;
+	     justify-content: center;
+     }
+	
+`
 
-
+export const S = {
+	Link,
+	MenuItem,
+	Mask,
+	BurgerButton,
+	MobileMenuPopup,
+	MobileMenu,
+	StyledDesktopMenu
+}
