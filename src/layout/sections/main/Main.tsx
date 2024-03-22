@@ -38,15 +38,10 @@ const StyledMain = styled.section`
 `
 
 const SmallText = styled.h2`
-    //font-size: 14px;
-    //font-weight: 400;
     ${font({weight: 400, Fmin: 20, Fmax: 14,})}
 `
 const Name = styled.h2`
 	 ${font({family: "'Josefin Sans' , sans-serif", weight: 700, Fmin: 36, Fmax: 50,})}
-    //font-family: 'Josefin Sans' , sans-serif;
-    //font-size: 50px;
-    //font-weight: 700;
     letter-spacing: 0.05em;
 	margin: 10px 0;
 	
@@ -97,7 +92,7 @@ position: relative;
         }
 	}
     @media ${theme.media.mobile} {
-        margin-top: 65px ;
+        margin-top: 25px ;
     }
 `
 
