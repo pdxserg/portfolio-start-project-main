@@ -5,42 +5,54 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
 import {Container} from "../../../components/Container";
 
+const skillDate = [
+	{
+		iconId: 'codeSvg',
+		title: 'html',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+	{
+		iconId: 'css',
+		title: 'cssreact',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+	{
+		iconId: 'react',
+		title: 'react',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+	{
+		iconId: 'tipescript',
+		title: 'tipescript',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+	{
+		iconId: 'styledCompan',
+		title: 'styledCompan',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+	{
+		iconId: 'figma',
+		title: 'figma',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'
+	},
+]
+
 export const Skills = () => {
 	return (
 		<StyledSection>
 			<Container>
 				<SectionTitle>My Skills </SectionTitle>
 				<FlexWrapper wrap={'wrap'} justify={'space-around'}>
-					<Skill
-						iconId={'codeSvg'}
-						title={'html'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
-					<Skill
-						iconId={'css'}
-						title={'css'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
-					<Skill
-						iconId={'react'}
-						title={'react'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
-					<Skill
-						iconId={'tipescript'}
-						title={'tipescript'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
-					<Skill
-						iconId={'styledCompan'}
-						title={'styledCompan'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
-					<Skill
-						iconId={'figma'}
-						title={'figma'}
-						description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim'}
-					/>
+
+					{skillDate.map((s, index)=> {
+						return <Skill
+							key={index}
+							iconId={s.iconId}
+							title={s.title}
+							description={s.description} />
+					})}
+					
 
 				</FlexWrapper>
 
