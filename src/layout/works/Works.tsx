@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from "styled-components";
 import {SectionTitle} from "../../components/SectionTitle";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import photo from "../../assets/images/proj1.png"
