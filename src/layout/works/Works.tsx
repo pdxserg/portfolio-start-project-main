@@ -7,6 +7,7 @@ import photo1 from "../../assets/images/proj2 .png"
 import {TabMenu} from "./tabMenu/TabMenu";
 import {Container} from "../../components/Container";
 import {Work} from "./work/Work";
+import {S} from "./Work_Styles"
 
 const items1 = ["All", "Landingpage", "React", "SPA"]
 
@@ -28,7 +29,7 @@ const worksDate = [
 ]
 export const Works: React.FC = () => {
 	return (
-		<StyledWorks>
+		<S.Works>
 			<Container>
 				<SectionTitle>My Work </SectionTitle>
 				<TabMenu menuItems={items1} />
@@ -43,13 +44,7 @@ export const Works: React.FC = () => {
 					})}
 				</FlexWrapper>
 			</Container>
-		</StyledWorks>
+		</S.Works>
 	);
 };
 
-const StyledWorks = styled.section`
-	min-height: 84vh;
-    ${FlexWrapper}{
-	    gap: 10PX;
-    }
-`
