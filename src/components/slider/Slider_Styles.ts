@@ -3,14 +3,17 @@ import {theme} from "../../styles/Theme.styled";
 
 const Slider = styled.div`
     max-width: 500px;
+    width: 100%;
+    border: 1px solid red;
     display: flex;
 	flex-direction: column;
 	align-items: center;
-   
+    
 `
 const Slide = styled.div`
-	
+   
 	text-align: center;
+    
 `
 const StyledText = styled.p`
 
@@ -25,7 +28,9 @@ const Name =styled.span`
 	margin: 20px 0 30px;
 
 `
-
+ const Text = styled.p`
+ 
+ `
 const Pagination = styled.div`
 	span:nth-child(2){
         width: 20px;
@@ -54,5 +59,6 @@ export const S = {
 	Slide,
 	StyledText,
 	Name,
+	Text,
 	Pagination
 }
