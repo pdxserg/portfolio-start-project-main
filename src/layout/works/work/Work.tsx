@@ -20,7 +20,7 @@ type WorkPropsType = {
 					<S.Description>
 						<S.WorkTitle>{props.title}</S.WorkTitle>
 						<S.WorkText>{props.description}</S.WorkText>
-						<LinkItem href={ "#"}>Demo</LinkItem>
+						<LinkItem active  href={ "#"}>Demo</LinkItem>
 						<LinkItem href={ "#"}>Code</LinkItem>
 					</S.Description>
 

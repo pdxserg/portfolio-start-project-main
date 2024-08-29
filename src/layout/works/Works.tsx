@@ -88,6 +88,7 @@ const changeFilterStatus=(value: 'all' | 'spa' | 'react' | 'landingpage')=>{
 			<Container>
 				<SectionTitle>My Work </SectionTitle>
 				<TabMenu tabsItems={tabsItem}
+				         curentFilterStatus={curentFilterStatus}
 				         changeFilterStatus={changeFilterStatus}
 				/>
 				<FlexWrapper justify={'space-between'} align={"flex-start"} wrap={"wrap"}>
