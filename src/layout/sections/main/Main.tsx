@@ -4,6 +4,9 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from './Main_Styles'
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
+
+
 export const Main: React.FC = () => {
 	return (
 		<S.Main>
@@ -26,10 +29,14 @@ export const Main: React.FC = () => {
 						</S.MainTitle>
 					</div>
 					<S.PhotoWrap>
-						<picture>
-							<source srcSet={`${photo} 1x`}/>
+						{/*<picture>*/}
+						{/*	<source srcSet={`${photo} 1x`}/>*/}
+						{/*	<S.Photo src={photo} alt="Photo"/>*/}
+						{/*</picture>*/}
+						<Tilt >
+							{/*<source srcSet={`${photo} 1x`}/>*/}
 							<S.Photo src={photo} alt="Photo"/>
-						</picture>
+						</Tilt>
 
 					</S.PhotoWrap>
 
