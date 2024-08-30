@@ -38,8 +38,12 @@ const Name = styled.h2`
 const MainTitle = styled.h1`
     font-size: 27px;
     font-weight: 400;
+	p{
+		display: none;
+	}
     
 `
+
 const PhotoWrap = styled.div`
 position: relative;
 	z-index: 0;
