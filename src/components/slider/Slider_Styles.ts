@@ -4,7 +4,7 @@ import {theme} from "../../styles/Theme.styled";
 const Slider = styled.div`
     max-width: 500px;
     width: 100%;
-    border: 1px solid red;
+
     display: flex;
 	flex-direction: column;
 	align-items: center;
