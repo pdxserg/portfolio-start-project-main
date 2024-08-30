@@ -7,6 +7,7 @@ import {Button} from "../../components/Button";
 
 
 const Works = styled.section`
+    position: relative;
 	min-height: 84vh;
     ${FlexWrapper}{
 	    gap: 10PX;

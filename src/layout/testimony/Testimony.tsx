@@ -9,7 +9,7 @@ import {Container} from "../../components/Container";
 
 export const Testimony: React.FC = () => {
 	return (
-		<StyledTestimony>
+		<StyledTestimony id={"testimony"}>
 			<Container>
 				<SectionTitle>Testimony</SectionTitle>
 				<FlexWrapper direction={"column"} align={"center"}>
@@ -25,7 +25,7 @@ export const Testimony: React.FC = () => {
 };
 
 const StyledTestimony = styled.section`
-
+    position: relative;
     min-height: 50vh;
 	
 	${IconWrap}{

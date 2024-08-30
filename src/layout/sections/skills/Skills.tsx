@@ -40,7 +40,7 @@ const skillDate = [
 
 export const Skills = () => {
 	return (
-		<StyledSection>
+		<StyledSection id={"skills"}>
 			<Container>
 				<SectionTitle>My Skills </SectionTitle>
 				<FlexWrapper wrap={'wrap'} justify={'space-around'}>
@@ -66,7 +66,7 @@ export const Skills = () => {
 };
 
 const StyledSection = styled.section`
-	
+	position: relative;
 	
 `
 

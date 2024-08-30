@@ -7,22 +7,24 @@ import {Testimony} from "./layout/testimony/Testimony";
 import {Contact} from "./layout/contact/Contact";
 import {Slogan} from "./layout/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
+import {Particle} from "./components/particle/Particle";
 
 
 function App() {
-    return (
-        <div className="App">
+	return (
+		<div className="App">
 
-            <Header />
-            <Main />
-            <Skills />
-            <Works />
-            <Testimony />
-            <Contact />
-            <Slogan />
-            <Footer />
-        </div>
-    );
+			{/*<Particle/>*/}
+			<Header/>
+			<Main/>
+			<Skills/>
+			<Works/>
+			<Testimony/>
+			<Contact/>
+			<Slogan/>
+			<Footer/>
+		</div>
+	);
 }
 
 export default App;

@@ -84,7 +84,7 @@ const changeFilterStatus=(value: 'all' | 'spa' | 'react' | 'landingpage')=>{
 		setCurentFilterStatus(value)
 }
 	return (
-		<S.Works>
+		<S.Works id={"works"}>
 			<Container>
 				<SectionTitle>My Work </SectionTitle>
 				<TabMenu tabsItems={tabsItem}

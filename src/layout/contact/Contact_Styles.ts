@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme.styled";
 
 const Contact = styled.section`
-	
+    position: relative;
 `
 const StyledForm = styled.form`
 max-width: 540px;
