@@ -2,7 +2,6 @@ import React from 'react';
 import {S} from '../HeaderMenu_Styles'
 
 
-
 const items = [
 	{
 		title: "Home",
@@ -25,20 +24,23 @@ const items = [
 		href: "contact"
 	},
 
-	 ]
-export const Menu:React.FC = ( ) => {
+]
+export const Menu: React.FC = () => {
 	return (
 		<ul>
 			{items.map((item, index) => {
 					return <S.MenuItem key={index}>
-						<S.Link href={`#${item.href}`}>{item.title}
+						<S.NavLink to={item.href}
+						           smooth={true}
+						           activeClass="active"
+						>{item.title}
 							<S.Mask>
 								<span>{item.title}</span>
 							</S.Mask>
 							<S.Mask>
 								<span>{item.title}</span>
 							</S.Mask>
-						</S.Link>
+						</S.NavLink>
 					</S.MenuItem>
 				}
 			)}
